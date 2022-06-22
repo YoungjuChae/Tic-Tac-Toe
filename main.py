@@ -4,6 +4,10 @@
 # Importing necessary module
 import random
 from art import logo
+import os
+
+# Creating necessary variable
+clear = lambda: os.system('clear')
 
 # Decide the letter of player and computer
 def getLetter():
@@ -140,5 +144,5 @@ def playGame():
 
 # Give the option to play the game again
 while input('Do you want to play Tic-Tac-Toe? (y)es or (n)o? ') == 'y':
+  clear()
   playGame()
-
